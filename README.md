@@ -8,12 +8,6 @@
 
 Some useful links
 
-- https://github.com/Mawla/eachandother.com
-- https://eachandother.vercel.app (prod)
-- https://eachandother.vercel.app/cms (prod)
-- https://development-eachandother.vercel.app (dev)
-- https://development-eachandother.vercel.app/cms (dev)
-
 Get started
 
 - `yarn dev` runs next.js
