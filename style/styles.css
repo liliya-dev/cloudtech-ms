@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply antialiased;
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  .bg-inherit {
+    background-color: inherit;
+  }
+
+  /* images */
+  img {
+    image-rendering: -webkit-optimize-contrast;
+  }
+
+  /* 
+  Currently Tailwind default `break-words` doesn't add word-break
+  If this is ever added this can be removed
+  */
+
+  .break-words {
+    overflow-wrap: normal;
+    word-break: break-word;
+  }
+
+  /* Overflow */
+  .overflow-scrolling-touch {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Fix wrapper div inside portable text destroying prose */
+  .prose-sm > div > :last-child {
+    margin-bottom: 0;
+  }
+  .prose-sm > div > :first-child {
+    margin-top: 0;
+  }
+  .prose > div > :last-child {
+    margin-bottom: 0;
+  }
+  .prose > div > :first-child {
+    margin-top: 0;
+  }
+
+  .preview {
+    z-index: 999;
+    position: fixed;
+    right: 16px;
+    top: 16px;
+    padding: 6px 8px;
+    background: black;
+    color: white;
+    font-size: 14px;
+  }
+
+  .preview:hover {
+    text-decoration: underline;
+  }
+}
+
+@import './shadows.css';
+@import './radix.css';

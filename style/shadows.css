@@ -1,0 +1,43 @@
+/* Shadow filter for hero image */
+.shadow-hero-screenshot {
+  filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.5));
+}
+
+@media (min-width: 768px) {
+  .shadow-hero-screenshot {
+    filter: drop-shadow(-8px 8px 30px rgba(0, 0, 0, 0.5));
+  }
+}
+
+/* Shadow filter for text image module */
+.shadow-textimage-screenshot {
+  filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.5));
+}
+
+@media (min-width: 768px) {
+  .shadow-textimage-screenshot {
+    filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.25));
+  }
+}
+
+/* Add theme border to text image */
+.shadow-textimage-theme-br {
+  filter: drop-shadow(12px 12px 0 currentColor);
+}
+
+.shadow-textimage-theme-tr {
+  filter: drop-shadow(12px -12px 0 currentColor);
+}
+
+.shadow-textimage-theme-bl {
+  filter: drop-shadow(-12px 12px 0 currentColor);
+}
+
+.shadow-textimage-theme-tl {
+  filter: drop-shadow(-12px -12px 0 currentColor);
+}
+
+/* Shadow filter for showcase items */
+.shadow-showcase {
+  filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.09));
+}
